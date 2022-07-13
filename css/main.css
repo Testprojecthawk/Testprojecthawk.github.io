@@ -1,5 +1,6 @@
 * {
     font-size: 18px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -98,6 +99,7 @@ main {
 .arrow {
     position: absolute;
     bottom: 2%;
+    left: 49%;
     padding: 0.2em 0.4em;
     border: 2px solid #000;
     color: #000;
@@ -106,3 +108,5 @@ main {
 .fa-arrow-down {
     font-size: 1.4em;
 }
+
+.
