@@ -14,12 +14,27 @@ header {
     flex-direction: row;
     justify-content : space-between;
     padding: 0.5em 0;
+    z-index: 999;
+    position: fixed;
+    width: 100%;
 }
 
 .header-icon {
     margin: 0.1em;
     width: 69px;
     height: 60px;
+}
+.icon-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-decoration: none;
+
+}
+
+.icon-link p {
+    margin: auto 0.5em;
+    color: #ffffff;
 }
 
 .header-nav {
@@ -42,4 +57,25 @@ header {
 
 .header-nav a:hover {
     background-color: #F9BB4E;
+}
+
+main {
+    background-color: #d7992c88;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.main-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-container h2 {
+    font-size: 2.5em;
+}
+.main-container p {
+    font-size: 1.4em;
 }
