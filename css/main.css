@@ -164,3 +164,25 @@ section {
 .content a {
     text-decoration: none;
 }
+
+footer{
+    background-color: #161300;
+    color: #ffff;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title{
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.footer-title span{
+    color: #ffc800;
+}
+
+footer .social-icons a{
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
