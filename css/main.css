@@ -1,5 +1,4 @@
 * {
-    font-size: 18px;
     scroll-behavior: smooth;
 }
 
@@ -36,6 +35,7 @@ header {
 .icon-link p {
     margin: auto 0.5em;
     color: #ffffff;
+    font-size: 1.4em;
 }
 
 .header-nav {
@@ -54,6 +54,7 @@ header {
     margin: 0.2em;
     transition: all 0.5s linear;
     border-radius: 0.3rem;
+    font-size: 1.2em;
 }
 
 .header-nav a:hover {
@@ -109,4 +110,57 @@ main {
     font-size: 1.4em;
 }
 
-.
+section {
+    padding: 100px 200px;
+}
+
+.card {
+    background-color: #ffff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.5s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card .icon {
+    color: #b5770a;
+    font-size: 5em;
+    text-align: center;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    color: #b5770a;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.info {
+    text-align: center;
+    color: #000f;
+}
+
+.info h3 {
+    color: #b5770a;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.content a {
+    text-decoration: none;
+}
