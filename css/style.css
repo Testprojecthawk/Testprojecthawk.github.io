@@ -92,3 +92,13 @@ button:hover{
 a:hover{
   text-decoration: underline;
 }
+.fa-x {
+  position: fixed;
+  top: 1%;
+  right: 1%;
+  opacity: 1;
+  font-size: 2em;
+  color: black;
+  border: 3px solid black;
+  padding: 2px 3px;
+}
