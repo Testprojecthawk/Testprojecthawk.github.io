@@ -19,7 +19,7 @@
         <nav class="header-nav">
             <a href="#services">Services</a>
             <a href="#contact">Contact</a>
-            <a href="ar/"><i class="fa-solid fa-globe"></i> ع</a>
+            <a href="ar/about.html"><i class="fa-solid fa-globe"></i> ع</a>
         </nav>
     </header>
     <main id="main">
@@ -123,5 +123,28 @@
 <p class="footer-title">Copyright &copy; <span>PerpHawkStudios</span></p>
     </footer>
     <script src='js/main.js'></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyBt59lromv1U-B3NVmm5Qr0usw0BpIPvCw",
+          authDomain: "perphawk-website.firebaseapp.com",
+          projectId: "perphawk-website",
+          storageBucket: "perphawk-website.appspot.com",
+          messagingSenderId: "388516405539",
+          appId: "1:388516405539:web:6039dd13bb4eed6167ec96",
+          measurementId: "G-F68GWPKZRP"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
 </body>
 </html>

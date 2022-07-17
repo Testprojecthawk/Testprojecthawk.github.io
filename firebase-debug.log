@@ -1,0 +1,348 @@
+[debug] [2022-07-17T16:27:27.903Z] ----------------------------------------------------------------------
+[debug] [2022-07-17T16:27:27.906Z] Command:       /usr/bin/node /usr/local/bin/firebase deploy
+[debug] [2022-07-17T16:27:27.906Z] CLI Version:   11.2.2
+[debug] [2022-07-17T16:27:27.907Z] Platform:      linux
+[debug] [2022-07-17T16:27:27.907Z] Node Version:  v16.16.0
+[debug] [2022-07-17T16:27:27.907Z] Time:          Sun Jul 17 2022 18:27:27 GMT+0200 (Eastern European Standard Time)
+[debug] [2022-07-17T16:27:27.908Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-17T16:27:28.000Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-17T16:27:28.001Z] > authorizing via signed-in user (karemyossry147@gmail.com)
+[debug] [2022-07-17T16:27:28.001Z] [iam] checking project perphawk-website for permissions ["cloudconfig.configs.get","cloudconfig.configs.update","cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2022-07-17T16:27:28.004Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/perphawk-website:testIamPermissions [none]
+[debug] [2022-07-17T16:27:28.004Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/perphawk-website:testIamPermissions {"permissions":["cloudconfig.configs.get","cloudconfig.configs.update","cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2022-07-17T16:27:28.859Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/perphawk-website:testIamPermissions 200
+[debug] [2022-07-17T16:27:28.862Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/perphawk-website:testIamPermissions {"permissions":["cloudconfig.configs.get","cloudconfig.configs.update","cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2022-07-17T16:27:28.864Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/perphawk-website/serviceAccounts/perphawk-website@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2022-07-17T16:27:28.864Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/perphawk-website/serviceAccounts/perphawk-website@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2022-07-17T16:27:29.674Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/perphawk-website/serviceAccounts/perphawk-website@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2022-07-17T16:27:29.679Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/perphawk-website/serviceAccounts/perphawk-website@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2022-07-17T16:27:29.682Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/perphawk-website [none]
+[debug] [2022-07-17T16:27:30.134Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/perphawk-website 200
+[debug] [2022-07-17T16:27:30.135Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/perphawk-website {"projectId":"perphawk-website","projectNumber":"388516405539","displayName":"perphawk-website","name":"projects/perphawk-website","resources":{"hostingSite":"perphawk-website","realtimeDatabaseInstance":"perphawk-website-default-rtdb","storageBucket":"perphawk-website.appspot.com","locationId":"europe-west"},"state":"ACTIVE"}
+[debug] [2022-07-17T16:27:30.135Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/perphawk-website [none]
+[debug] [2022-07-17T16:27:30.603Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/perphawk-website 200
+[debug] [2022-07-17T16:27:30.604Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/perphawk-website {"projectId":"perphawk-website","projectNumber":"388516405539","displayName":"perphawk-website","name":"projects/perphawk-website","resources":{"hostingSite":"perphawk-website","realtimeDatabaseInstance":"perphawk-website-default-rtdb","storageBucket":"perphawk-website.appspot.com","locationId":"europe-west"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'perphawk-website'...
+[info] 
+[info] i  deploying database, storage, firestore, functions, hosting, remoteconfig 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[error] 
+[error] Error: functions predeploy error: Command terminated with non-zero exit code 1
+[debug] [2022-07-17T16:28:14.414Z] ----------------------------------------------------------------------
+[debug] [2022-07-17T16:28:14.417Z] Command:       /usr/bin/node /usr/local/bin/firebase deploy --only hosting
+[debug] [2022-07-17T16:28:14.417Z] CLI Version:   11.2.2
+[debug] [2022-07-17T16:28:14.417Z] Platform:      linux
+[debug] [2022-07-17T16:28:14.417Z] Node Version:  v16.16.0
+[debug] [2022-07-17T16:28:14.418Z] Time:          Sun Jul 17 2022 18:28:14 GMT+0200 (Eastern European Standard Time)
+[debug] [2022-07-17T16:28:14.418Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-17T16:28:14.520Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-17T16:28:14.521Z] > authorizing via signed-in user (karemyossry147@gmail.com)
+[debug] [2022-07-17T16:28:14.521Z] [iam] checking project perphawk-website for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-07-17T16:28:14.524Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/perphawk-website:testIamPermissions [none]
+[debug] [2022-07-17T16:28:14.524Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/perphawk-website:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-17T16:28:15.567Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/perphawk-website:testIamPermissions 200
+[debug] [2022-07-17T16:28:15.567Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/perphawk-website:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-17T16:28:15.569Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/perphawk-website [none]
+[debug] [2022-07-17T16:28:15.943Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/perphawk-website 200
+[debug] [2022-07-17T16:28:15.943Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/perphawk-website {"projectId":"perphawk-website","projectNumber":"388516405539","displayName":"perphawk-website","name":"projects/perphawk-website","resources":{"hostingSite":"perphawk-website","realtimeDatabaseInstance":"perphawk-website-default-rtdb","storageBucket":"perphawk-website.appspot.com","locationId":"europe-west"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'perphawk-website'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-07-17T16:28:15.946Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/perphawk-website [none]
+[debug] [2022-07-17T16:28:16.317Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/perphawk-website 200
+[debug] [2022-07-17T16:28:16.318Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/perphawk-website {"projectId":"perphawk-website","projectNumber":"388516405539","displayName":"perphawk-website","name":"projects/perphawk-website","resources":{"hostingSite":"perphawk-website","realtimeDatabaseInstance":"perphawk-website-default-rtdb","storageBucket":"perphawk-website.appspot.com","locationId":"europe-west"},"state":"ACTIVE"}
+[debug] [2022-07-17T16:28:16.320Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions [none]
+[debug] [2022-07-17T16:28:16.320Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-07-17T16:28:18.333Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions 200
+[debug] [2022-07-17T16:28:18.333Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions {"name":"projects/388516405539/sites/perphawk-website/versions/e2e9bebe9cc33546","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[perphawk-website]: beginning deploy... 
+[info] i  hosting[perphawk-website]: found 2 files in public 
+[debug] [2022-07-17T16:28:18.345Z] [hosting] uploading with 200 concurrency
+[debug] [2022-07-17T16:28:18.346Z] [hosting] hash cache [cHVibGlj] not populated
+[debug] [2022-07-17T16:28:18.373Z] [hosting] hash cache [cHVibGlj] stored for 2 files
+[debug] [2022-07-17T16:28:18.376Z] [hosting][hash queue][FINAL] {"max":21,"min":6,"avg":13.5,"active":0,"complete":2,"success":2,"errored":0,"retried":0,"total":2,"elapsed":29}
+[debug] [2022-07-17T16:28:18.377Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions/e2e9bebe9cc33546:populateFiles [none]
+[debug] [2022-07-17T16:28:18.378Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions/e2e9bebe9cc33546:populateFiles {"files":{"/404.html":"b7bab6b83fa074653ff28c8d2a64135d3434575f70a12ab3d3ba8080461b9537","/index.html":"383a98a810a18bc8874190f3f07ffadcf30b5eecad5e7509b1da8386c02fb147"}}
+[debug] [2022-07-17T16:28:19.455Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions/e2e9bebe9cc33546:populateFiles 200
+[debug] [2022-07-17T16:28:19.458Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions/e2e9bebe9cc33546:populateFiles {"uploadRequiredHashes":["b7bab6b83fa074653ff28c8d2a64135d3434575f70a12ab3d3ba8080461b9537","383a98a810a18bc8874190f3f07ffadcf30b5eecad5e7509b1da8386c02fb147"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/perphawk-website/versions/e2e9bebe9cc33546/files"}
+[debug] [2022-07-17T16:28:19.459Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/perphawk-website/versions/e2e9bebe9cc33546/files/b7bab6b83fa074653ff28c8d2a64135d3434575f70a12ab3d3ba8080461b9537 [none]
+[debug] [2022-07-17T16:28:19.459Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/perphawk-website/versions/e2e9bebe9cc33546/files/b7bab6b83fa074653ff28c8d2a64135d3434575f70a12ab3d3ba8080461b9537 [stream]
+[debug] [2022-07-17T16:28:19.462Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/perphawk-website/versions/e2e9bebe9cc33546/files/383a98a810a18bc8874190f3f07ffadcf30b5eecad5e7509b1da8386c02fb147 [none]
+[debug] [2022-07-17T16:28:19.462Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/perphawk-website/versions/e2e9bebe9cc33546/files/383a98a810a18bc8874190f3f07ffadcf30b5eecad5e7509b1da8386c02fb147 [stream]
+[debug] [2022-07-17T16:28:19.464Z] [hosting][populate queue][FINAL] {"max":1088,"min":1088,"avg":1088,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1093}
+[debug] [2022-07-17T16:28:19.464Z] [hosting] uploads queued: 2
+[debug] [2022-07-17T16:28:20.657Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/perphawk-website/versions/e2e9bebe9cc33546/files/383a98a810a18bc8874190f3f07ffadcf30b5eecad5e7509b1da8386c02fb147 200
+[debug] [2022-07-17T16:28:20.657Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/perphawk-website/versions/e2e9bebe9cc33546/files/383a98a810a18bc8874190f3f07ffadcf30b5eecad5e7509b1da8386c02fb147 [stream]
+[debug] [2022-07-17T16:28:20.676Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/perphawk-website/versions/e2e9bebe9cc33546/files/b7bab6b83fa074653ff28c8d2a64135d3434575f70a12ab3d3ba8080461b9537 200
+[debug] [2022-07-17T16:28:20.677Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/perphawk-website/versions/e2e9bebe9cc33546/files/b7bab6b83fa074653ff28c8d2a64135d3434575f70a12ab3d3ba8080461b9537 [stream]
+[debug] [2022-07-17T16:28:20.677Z] [hosting][upload queue][FINAL] {"max":1219,"min":1198,"avg":1208.5,"active":0,"complete":2,"success":2,"errored":0,"retried":0,"total":2,"elapsed":1219}
+[info] ✔  hosting[perphawk-website]: file upload complete 
+[debug] [2022-07-17T16:28:20.680Z] [hosting] deploy completed after 2346ms
+[debug] [2022-07-17T16:28:20.685Z] [
+  {
+    "config": {
+      "public": "public",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "perphawk-website"
+    },
+    "site": "perphawk-website",
+    "version": "projects/388516405539/sites/perphawk-website/versions/e2e9bebe9cc33546"
+  }
+]
+[info] i  hosting[perphawk-website]: finalizing version... 
+[debug] [2022-07-17T16:28:20.689Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions/e2e9bebe9cc33546 updateMask=status%2Cconfig
+[debug] [2022-07-17T16:28:20.689Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions/e2e9bebe9cc33546 {"status":"FINALIZED","config":{}}
+[debug] [2022-07-17T16:28:21.908Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions/e2e9bebe9cc33546 200
+[debug] [2022-07-17T16:28:21.908Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions/e2e9bebe9cc33546 {"name":"projects/388516405539/sites/perphawk-website/versions/e2e9bebe9cc33546","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-07-17T16:28:17.373809Z","createUser":{"email":"karemyossry147@gmail.com"},"finalizeTime":"2022-07-17T16:28:21.800179Z","finalizeUser":{"email":"karemyossry147@gmail.com"}}
+[debug] [2022-07-17T16:28:21.908Z] [hosting] finalized version for perphawk-website:[object Object]
+[info] ✔  hosting[perphawk-website]: version finalized 
+[info] i  hosting[perphawk-website]: releasing new version... 
+[debug] [2022-07-17T16:28:21.918Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/releases versionName=projects%2F388516405539%2Fsites%2Fperphawk-website%2Fversions%2Fe2e9bebe9cc33546
+[debug] [2022-07-17T16:28:21.919Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/releases {"message":null}
+[debug] [2022-07-17T16:28:23.093Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/releases 200
+[debug] [2022-07-17T16:28:23.096Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/releases {"name":"projects/388516405539/sites/perphawk-website/releases/1658075302247995","version":{"name":"projects/388516405539/sites/perphawk-website/versions/e2e9bebe9cc33546","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-07-17T16:28:17.373809Z","createUser":{"email":"karemyossry147@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AFdZucrsg_AJGf-kGHt-m98AY3m44s0NbaKlKpeqcHX8Yw"},"finalizeTime":"2022-07-17T16:28:21.800179Z","finalizeUser":{"email":"karemyossry147@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AFdZucrsg_AJGf-kGHt-m98AY3m44s0NbaKlKpeqcHX8Yw"}},"type":"DEPLOY","releaseTime":"2022-07-17T16:28:22.247995243Z","releaseUser":{"email":"karemyossry147@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AFdZucrsg_AJGf-kGHt-m98AY3m44s0NbaKlKpeqcHX8Yw"}}
+[debug] [2022-07-17T16:28:23.097Z] [hosting] release: {"name":"projects/388516405539/sites/perphawk-website/releases/1658075302247995","version":{"name":"projects/388516405539/sites/perphawk-website/versions/e2e9bebe9cc33546","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-07-17T16:28:17.373809Z","createUser":{"email":"karemyossry147@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AFdZucrsg_AJGf-kGHt-m98AY3m44s0NbaKlKpeqcHX8Yw"},"finalizeTime":"2022-07-17T16:28:21.800179Z","finalizeUser":{"email":"karemyossry147@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AFdZucrsg_AJGf-kGHt-m98AY3m44s0NbaKlKpeqcHX8Yw"}},"type":"DEPLOY","releaseTime":"2022-07-17T16:28:22.247995243Z","releaseUser":{"email":"karemyossry147@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AFdZucrsg_AJGf-kGHt-m98AY3m44s0NbaKlKpeqcHX8Yw"}}
+[info] ✔  hosting[perphawk-website]: release complete 
+[info] 
+[info] ✔  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/perphawk-website/overview
+[info] Hosting URL: https://perphawk-website.web.app
+[debug] [2022-07-17T16:31:06.726Z] ----------------------------------------------------------------------
+[debug] [2022-07-17T16:31:06.728Z] Command:       /usr/bin/node /usr/local/bin/firebase deploy --only hosting
+[debug] [2022-07-17T16:31:06.729Z] CLI Version:   11.2.2
+[debug] [2022-07-17T16:31:06.729Z] Platform:      linux
+[debug] [2022-07-17T16:31:06.729Z] Node Version:  v16.16.0
+[debug] [2022-07-17T16:31:06.730Z] Time:          Sun Jul 17 2022 18:31:06 GMT+0200 (Eastern European Standard Time)
+[debug] [2022-07-17T16:31:06.730Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-17T16:31:06.832Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-17T16:31:06.832Z] > authorizing via signed-in user (karemyossry147@gmail.com)
+[debug] [2022-07-17T16:31:06.832Z] [iam] checking project perphawk-website for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-07-17T16:31:06.836Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/perphawk-website:testIamPermissions [none]
+[debug] [2022-07-17T16:31:06.836Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/perphawk-website:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-17T16:31:08.016Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/perphawk-website:testIamPermissions 200
+[debug] [2022-07-17T16:31:08.016Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/perphawk-website:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-17T16:31:08.018Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/perphawk-website [none]
+[debug] [2022-07-17T16:31:08.610Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/perphawk-website 200
+[debug] [2022-07-17T16:31:08.610Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/perphawk-website {"projectId":"perphawk-website","projectNumber":"388516405539","displayName":"perphawk-website","name":"projects/perphawk-website","resources":{"hostingSite":"perphawk-website","realtimeDatabaseInstance":"perphawk-website-default-rtdb","storageBucket":"perphawk-website.appspot.com","locationId":"europe-west"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'perphawk-website'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-07-17T16:31:08.631Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/perphawk-website [none]
+[debug] [2022-07-17T16:31:09.118Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/perphawk-website 200
+[debug] [2022-07-17T16:31:09.119Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/perphawk-website {"projectId":"perphawk-website","projectNumber":"388516405539","displayName":"perphawk-website","name":"projects/perphawk-website","resources":{"hostingSite":"perphawk-website","realtimeDatabaseInstance":"perphawk-website-default-rtdb","storageBucket":"perphawk-website.appspot.com","locationId":"europe-west"},"state":"ACTIVE"}
+[debug] [2022-07-17T16:31:09.122Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions [none]
+[debug] [2022-07-17T16:31:09.122Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-07-17T16:31:10.646Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions 200
+[debug] [2022-07-17T16:31:10.646Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions {"name":"projects/388516405539/sites/perphawk-website/versions/9f309ae989f97963","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[perphawk-website]: beginning deploy... 
+[info] i  hosting[perphawk-website]: found 2 files in public 
+[debug] [2022-07-17T16:31:10.655Z] [hosting] uploading with 200 concurrency
+[debug] [2022-07-17T16:31:10.666Z] [hosting] hash cache [cHVibGlj] stored for 2 files
+[debug] [2022-07-17T16:31:10.667Z] [hosting][hash queue][FINAL] {"max":7,"min":3,"avg":5,"active":0,"complete":2,"success":2,"errored":0,"retried":0,"total":2,"elapsed":10}
+[debug] [2022-07-17T16:31:10.667Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions/9f309ae989f97963:populateFiles [none]
+[debug] [2022-07-17T16:31:10.669Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions/9f309ae989f97963:populateFiles {"files":{"/404.html":"b7bab6b83fa074653ff28c8d2a64135d3434575f70a12ab3d3ba8080461b9537","/index.html":"6aee6793d32d78492146f71fec4e280a4cc5973dad063e9c972cf555a80a5551"}}
+[debug] [2022-07-17T16:31:11.688Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions/9f309ae989f97963:populateFiles 200
+[debug] [2022-07-17T16:31:11.693Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions/9f309ae989f97963:populateFiles {"uploadRequiredHashes":["6aee6793d32d78492146f71fec4e280a4cc5973dad063e9c972cf555a80a5551"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/perphawk-website/versions/9f309ae989f97963/files"}
+[debug] [2022-07-17T16:31:11.694Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/perphawk-website/versions/9f309ae989f97963/files/6aee6793d32d78492146f71fec4e280a4cc5973dad063e9c972cf555a80a5551 [none]
+[debug] [2022-07-17T16:31:11.694Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/perphawk-website/versions/9f309ae989f97963/files/6aee6793d32d78492146f71fec4e280a4cc5973dad063e9c972cf555a80a5551 [stream]
+[debug] [2022-07-17T16:31:11.697Z] [hosting][populate queue][FINAL] {"max":1029,"min":1029,"avg":1029,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1032}
+[debug] [2022-07-17T16:31:11.697Z] [hosting] uploads queued: 1
+[debug] [2022-07-17T16:31:13.235Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/perphawk-website/versions/9f309ae989f97963/files/6aee6793d32d78492146f71fec4e280a4cc5973dad063e9c972cf555a80a5551 200
+[debug] [2022-07-17T16:31:13.235Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/perphawk-website/versions/9f309ae989f97963/files/6aee6793d32d78492146f71fec4e280a4cc5973dad063e9c972cf555a80a5551 [stream]
+[debug] [2022-07-17T16:31:13.235Z] [hosting][upload queue][FINAL] {"max":1541,"min":1541,"avg":1541,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1541}
+[info] ✔  hosting[perphawk-website]: file upload complete 
+[debug] [2022-07-17T16:31:13.236Z] [hosting] deploy completed after 2589ms
+[debug] [2022-07-17T16:31:13.240Z] [
+  {
+    "config": {
+      "public": "public",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "perphawk-website"
+    },
+    "site": "perphawk-website",
+    "version": "projects/388516405539/sites/perphawk-website/versions/9f309ae989f97963"
+  }
+]
+[info] i  hosting[perphawk-website]: finalizing version... 
+[debug] [2022-07-17T16:31:13.242Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions/9f309ae989f97963 updateMask=status%2Cconfig
+[debug] [2022-07-17T16:31:13.243Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions/9f309ae989f97963 {"status":"FINALIZED","config":{}}
+[debug] [2022-07-17T16:31:14.448Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions/9f309ae989f97963 200
+[debug] [2022-07-17T16:31:14.448Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions/9f309ae989f97963 {"name":"projects/388516405539/sites/perphawk-website/versions/9f309ae989f97963","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-07-17T16:31:10.124936Z","createUser":{"email":"karemyossry147@gmail.com"},"finalizeTime":"2022-07-17T16:31:14.341533Z","finalizeUser":{"email":"karemyossry147@gmail.com"}}
+[debug] [2022-07-17T16:31:14.448Z] [hosting] finalized version for perphawk-website:[object Object]
+[info] ✔  hosting[perphawk-website]: version finalized 
+[info] i  hosting[perphawk-website]: releasing new version... 
+[debug] [2022-07-17T16:31:14.449Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/releases versionName=projects%2F388516405539%2Fsites%2Fperphawk-website%2Fversions%2F9f309ae989f97963
+[debug] [2022-07-17T16:31:14.449Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/releases {"message":null}
+[debug] [2022-07-17T16:31:15.555Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/releases 200
+[debug] [2022-07-17T16:31:15.555Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/releases {"name":"projects/388516405539/sites/perphawk-website/releases/1658075474741257","version":{"name":"projects/388516405539/sites/perphawk-website/versions/9f309ae989f97963","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-07-17T16:31:10.124936Z","createUser":{"email":"karemyossry147@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AFdZucrsg_AJGf-kGHt-m98AY3m44s0NbaKlKpeqcHX8Yw"},"finalizeTime":"2022-07-17T16:31:14.341533Z","finalizeUser":{"email":"karemyossry147@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AFdZucrsg_AJGf-kGHt-m98AY3m44s0NbaKlKpeqcHX8Yw"}},"type":"DEPLOY","releaseTime":"2022-07-17T16:31:14.741257121Z","releaseUser":{"email":"karemyossry147@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AFdZucrsg_AJGf-kGHt-m98AY3m44s0NbaKlKpeqcHX8Yw"}}
+[debug] [2022-07-17T16:31:15.555Z] [hosting] release: {"name":"projects/388516405539/sites/perphawk-website/releases/1658075474741257","version":{"name":"projects/388516405539/sites/perphawk-website/versions/9f309ae989f97963","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-07-17T16:31:10.124936Z","createUser":{"email":"karemyossry147@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AFdZucrsg_AJGf-kGHt-m98AY3m44s0NbaKlKpeqcHX8Yw"},"finalizeTime":"2022-07-17T16:31:14.341533Z","finalizeUser":{"email":"karemyossry147@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AFdZucrsg_AJGf-kGHt-m98AY3m44s0NbaKlKpeqcHX8Yw"}},"type":"DEPLOY","releaseTime":"2022-07-17T16:31:14.741257121Z","releaseUser":{"email":"karemyossry147@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AFdZucrsg_AJGf-kGHt-m98AY3m44s0NbaKlKpeqcHX8Yw"}}
+[info] ✔  hosting[perphawk-website]: release complete 
+[debug] [2022-07-17T16:32:14.646Z] ----------------------------------------------------------------------
+[debug] [2022-07-17T16:32:14.649Z] Command:       /usr/bin/node /usr/local/bin/firebase deploy --only hosting
+[debug] [2022-07-17T16:32:14.650Z] CLI Version:   11.2.2
+[debug] [2022-07-17T16:32:14.650Z] Platform:      linux
+[debug] [2022-07-17T16:32:14.650Z] Node Version:  v16.16.0
+[debug] [2022-07-17T16:32:14.651Z] Time:          Sun Jul 17 2022 18:32:14 GMT+0200 (Eastern European Standard Time)
+[debug] [2022-07-17T16:32:14.651Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-17T16:32:14.743Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-17T16:32:14.744Z] > authorizing via signed-in user (karemyossry147@gmail.com)
+[debug] [2022-07-17T16:32:14.744Z] [iam] checking project perphawk-website for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-07-17T16:32:14.747Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/perphawk-website:testIamPermissions [none]
+[debug] [2022-07-17T16:32:14.747Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/perphawk-website:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-17T16:32:15.692Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/perphawk-website:testIamPermissions 200
+[debug] [2022-07-17T16:32:15.693Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/perphawk-website:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-17T16:32:15.695Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/perphawk-website [none]
+[debug] [2022-07-17T16:32:16.186Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/perphawk-website 200
+[debug] [2022-07-17T16:32:16.186Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/perphawk-website {"projectId":"perphawk-website","projectNumber":"388516405539","displayName":"perphawk-website","name":"projects/perphawk-website","resources":{"hostingSite":"perphawk-website","realtimeDatabaseInstance":"perphawk-website-default-rtdb","storageBucket":"perphawk-website.appspot.com","locationId":"europe-west"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'perphawk-website'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-07-17T16:32:16.196Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/perphawk-website [none]
+[debug] [2022-07-17T16:32:16.609Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/perphawk-website 200
+[debug] [2022-07-17T16:32:16.610Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/perphawk-website {"projectId":"perphawk-website","projectNumber":"388516405539","displayName":"perphawk-website","name":"projects/perphawk-website","resources":{"hostingSite":"perphawk-website","realtimeDatabaseInstance":"perphawk-website-default-rtdb","storageBucket":"perphawk-website.appspot.com","locationId":"europe-west"},"state":"ACTIVE"}
+[debug] [2022-07-17T16:32:16.612Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions [none]
+[debug] [2022-07-17T16:32:16.612Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-07-17T16:32:18.293Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions 200
+[debug] [2022-07-17T16:32:18.293Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions {"name":"projects/388516405539/sites/perphawk-website/versions/95763086034284e0","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[perphawk-website]: beginning deploy... 
+[info] i  hosting[perphawk-website]: found 2 files in public 
+[debug] [2022-07-17T16:32:18.303Z] [hosting] uploading with 200 concurrency
+[debug] [2022-07-17T16:32:18.311Z] [hosting] hash cache [cHVibGlj] stored for 2 files
+[debug] [2022-07-17T16:32:18.311Z] [hosting][hash queue][FINAL] {"max":5,"min":1,"avg":3,"active":0,"complete":2,"success":2,"errored":0,"retried":0,"total":2,"elapsed":7}
+[debug] [2022-07-17T16:32:18.312Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions/95763086034284e0:populateFiles [none]
+[debug] [2022-07-17T16:32:18.312Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions/95763086034284e0:populateFiles {"files":{"/404.html":"b7bab6b83fa074653ff28c8d2a64135d3434575f70a12ab3d3ba8080461b9537","/index.html":"6aee6793d32d78492146f71fec4e280a4cc5973dad063e9c972cf555a80a5551"}}
+[debug] [2022-07-17T16:32:19.354Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions/95763086034284e0:populateFiles 200
+[debug] [2022-07-17T16:32:19.354Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions/95763086034284e0:populateFiles {"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/perphawk-website/versions/95763086034284e0/files"}
+[debug] [2022-07-17T16:32:19.355Z] [hosting][populate queue][FINAL] {"max":1045,"min":1045,"avg":1045,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1045}
+[debug] [2022-07-17T16:32:19.355Z] [hosting] uploads queued: 0
+[debug] [2022-07-17T16:32:19.355Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":0,"success":0,"errored":0,"retried":0,"total":0,"elapsed":1658075539355}
+[info] ✔  hosting[perphawk-website]: file upload complete 
+[debug] [2022-07-17T16:32:19.356Z] [hosting] deploy completed after 1062ms
+[debug] [2022-07-17T16:32:19.361Z] [
+  {
+    "config": {
+      "public": "public",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "perphawk-website"
+    },
+    "site": "perphawk-website",
+    "version": "projects/388516405539/sites/perphawk-website/versions/95763086034284e0"
+  }
+]
+[info] i  hosting[perphawk-website]: finalizing version... 
+[debug] [2022-07-17T16:32:19.362Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions/95763086034284e0 updateMask=status%2Cconfig
+[debug] [2022-07-17T16:32:19.363Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions/95763086034284e0 {"status":"FINALIZED","config":{}}
+[debug] [2022-07-17T16:32:20.537Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions/95763086034284e0 200
+[debug] [2022-07-17T16:32:20.538Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions/95763086034284e0 {"name":"projects/388516405539/sites/perphawk-website/versions/95763086034284e0","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-07-17T16:32:17.757074Z","createUser":{"email":"karemyossry147@gmail.com"},"finalizeTime":"2022-07-17T16:32:20.432211Z","finalizeUser":{"email":"karemyossry147@gmail.com"}}
+[debug] [2022-07-17T16:32:20.538Z] [hosting] finalized version for perphawk-website:[object Object]
+[info] ✔  hosting[perphawk-website]: version finalized 
+[info] i  hosting[perphawk-website]: releasing new version... 
+[debug] [2022-07-17T16:32:20.539Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/releases versionName=projects%2F388516405539%2Fsites%2Fperphawk-website%2Fversions%2F95763086034284e0
+[debug] [2022-07-17T16:32:20.539Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/releases {"message":null}
+[debug] [2022-07-17T16:32:21.675Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/releases 200
+[debug] [2022-07-17T16:32:21.675Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/releases {"name":"projects/388516405539/sites/perphawk-website/releases/1658075540862661","version":{"name":"projects/388516405539/sites/perphawk-website/versions/95763086034284e0","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-07-17T16:32:17.757074Z","createUser":{"email":"karemyossry147@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AFdZucrsg_AJGf-kGHt-m98AY3m44s0NbaKlKpeqcHX8Yw"},"finalizeTime":"2022-07-17T16:32:20.432211Z","finalizeUser":{"email":"karemyossry147@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AFdZucrsg_AJGf-kGHt-m98AY3m44s0NbaKlKpeqcHX8Yw"}},"type":"DEPLOY","releaseTime":"2022-07-17T16:32:20.862661796Z","releaseUser":{"email":"karemyossry147@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AFdZucrsg_AJGf-kGHt-m98AY3m44s0NbaKlKpeqcHX8Yw"}}
+[debug] [2022-07-17T16:32:21.675Z] [hosting] release: {"name":"projects/388516405539/sites/perphawk-website/releases/1658075540862661","version":{"name":"projects/388516405539/sites/perphawk-website/versions/95763086034284e0","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-07-17T16:32:17.757074Z","createUser":{"email":"karemyossry147@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AFdZucrsg_AJGf-kGHt-m98AY3m44s0NbaKlKpeqcHX8Yw"},"finalizeTime":"2022-07-17T16:32:20.432211Z","finalizeUser":{"email":"karemyossry147@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AFdZucrsg_AJGf-kGHt-m98AY3m44s0NbaKlKpeqcHX8Yw"}},"type":"DEPLOY","releaseTime":"2022-07-17T16:32:20.862661796Z","releaseUser":{"email":"karemyossry147@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AFdZucrsg_AJGf-kGHt-m98AY3m44s0NbaKlKpeqcHX8Yw"}}
+[info] ✔  hosting[perphawk-website]: release complete 
+[info] 
+[info] ✔  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/perphawk-website/overview
+[info] Hosting URL: https://perphawk-website.web.app
+[debug] [2022-07-17T16:33:06.048Z] ----------------------------------------------------------------------
+[debug] [2022-07-17T16:33:06.052Z] Command:       /usr/bin/node /usr/local/bin/firebase deploy --only hosting
+[debug] [2022-07-17T16:33:06.053Z] CLI Version:   11.2.2
+[debug] [2022-07-17T16:33:06.053Z] Platform:      linux
+[debug] [2022-07-17T16:33:06.053Z] Node Version:  v16.16.0
+[debug] [2022-07-17T16:33:06.054Z] Time:          Sun Jul 17 2022 18:33:06 GMT+0200 (Eastern European Standard Time)
+[debug] [2022-07-17T16:33:06.054Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-17T16:33:06.209Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-17T16:33:06.209Z] > authorizing via signed-in user (karemyossry147@gmail.com)
+[debug] [2022-07-17T16:33:06.209Z] [iam] checking project perphawk-website for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-07-17T16:33:06.213Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/perphawk-website:testIamPermissions [none]
+[debug] [2022-07-17T16:33:06.213Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/perphawk-website:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-17T16:33:07.107Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/perphawk-website:testIamPermissions 200
+[debug] [2022-07-17T16:33:07.107Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/perphawk-website:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-17T16:33:07.109Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/perphawk-website [none]
+[debug] [2022-07-17T16:33:07.513Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/perphawk-website 200
+[debug] [2022-07-17T16:33:07.513Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/perphawk-website {"projectId":"perphawk-website","projectNumber":"388516405539","displayName":"perphawk-website","name":"projects/perphawk-website","resources":{"hostingSite":"perphawk-website","realtimeDatabaseInstance":"perphawk-website-default-rtdb","storageBucket":"perphawk-website.appspot.com","locationId":"europe-west"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'perphawk-website'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-07-17T16:33:07.529Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/perphawk-website [none]
+[debug] [2022-07-17T16:33:08.355Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/perphawk-website 200
+[debug] [2022-07-17T16:33:08.355Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/perphawk-website {"projectId":"perphawk-website","projectNumber":"388516405539","displayName":"perphawk-website","name":"projects/perphawk-website","resources":{"hostingSite":"perphawk-website","realtimeDatabaseInstance":"perphawk-website-default-rtdb","storageBucket":"perphawk-website.appspot.com","locationId":"europe-west"},"state":"ACTIVE"}
+[debug] [2022-07-17T16:33:08.357Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions [none]
+[debug] [2022-07-17T16:33:08.358Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-07-17T16:33:09.695Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions 200
+[debug] [2022-07-17T16:33:09.696Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions {"name":"projects/388516405539/sites/perphawk-website/versions/83fca523366f62a5","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[perphawk-website]: beginning deploy... 
+[info] i  hosting[perphawk-website]: found 2 files in public 
+[debug] [2022-07-17T16:33:09.706Z] [hosting] uploading with 200 concurrency
+[debug] [2022-07-17T16:33:09.712Z] [hosting] hash cache [cHVibGlj] stored for 2 files
+[debug] [2022-07-17T16:33:09.713Z] [hosting][hash queue][FINAL] {"max":3,"min":2,"avg":2.5,"active":0,"complete":2,"success":2,"errored":0,"retried":0,"total":2,"elapsed":6}
+[debug] [2022-07-17T16:33:09.713Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions/83fca523366f62a5:populateFiles [none]
+[debug] [2022-07-17T16:33:09.713Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions/83fca523366f62a5:populateFiles {"files":{"/404.html":"b7bab6b83fa074653ff28c8d2a64135d3434575f70a12ab3d3ba8080461b9537","/index.html":"383a98a810a18bc8874190f3f07ffadcf30b5eecad5e7509b1da8386c02fb147"}}
+[debug] [2022-07-17T16:33:10.796Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions/83fca523366f62a5:populateFiles 200
+[debug] [2022-07-17T16:33:10.796Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions/83fca523366f62a5:populateFiles {"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/perphawk-website/versions/83fca523366f62a5/files"}
+[debug] [2022-07-17T16:33:10.797Z] [hosting][populate queue][FINAL] {"max":1086,"min":1086,"avg":1086,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1086}
+[debug] [2022-07-17T16:33:10.797Z] [hosting] uploads queued: 0
+[debug] [2022-07-17T16:33:10.797Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":0,"success":0,"errored":0,"retried":0,"total":0,"elapsed":1658075590797}
+[info] ✔  hosting[perphawk-website]: file upload complete 
+[debug] [2022-07-17T16:33:10.799Z] [hosting] deploy completed after 1102ms
+[debug] [2022-07-17T16:33:10.804Z] [
+  {
+    "config": {
+      "public": "public",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "perphawk-website"
+    },
+    "site": "perphawk-website",
+    "version": "projects/388516405539/sites/perphawk-website/versions/83fca523366f62a5"
+  }
+]
+[info] i  hosting[perphawk-website]: finalizing version... 
+[debug] [2022-07-17T16:33:10.807Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions/83fca523366f62a5 updateMask=status%2Cconfig
+[debug] [2022-07-17T16:33:10.807Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions/83fca523366f62a5 {"status":"FINALIZED","config":{}}
+[debug] [2022-07-17T16:33:12.253Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions/83fca523366f62a5 200
+[debug] [2022-07-17T16:33:12.253Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/versions/83fca523366f62a5 {"name":"projects/388516405539/sites/perphawk-website/versions/83fca523366f62a5","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-07-17T16:33:09.189325Z","createUser":{"email":"karemyossry147@gmail.com"},"finalizeTime":"2022-07-17T16:33:12.147633Z","finalizeUser":{"email":"karemyossry147@gmail.com"}}
+[debug] [2022-07-17T16:33:12.253Z] [hosting] finalized version for perphawk-website:[object Object]
+[info] ✔  hosting[perphawk-website]: version finalized 
+[info] i  hosting[perphawk-website]: releasing new version... 
+[debug] [2022-07-17T16:33:12.254Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/releases versionName=projects%2F388516405539%2Fsites%2Fperphawk-website%2Fversions%2F83fca523366f62a5
+[debug] [2022-07-17T16:33:12.254Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/releases {"message":null}
+[debug] [2022-07-17T16:33:13.554Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/releases 200
+[debug] [2022-07-17T16:33:13.554Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/388516405539/sites/perphawk-website/releases {"name":"projects/388516405539/sites/perphawk-website/releases/1658075592745272","version":{"name":"projects/388516405539/sites/perphawk-website/versions/83fca523366f62a5","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-07-17T16:33:09.189325Z","createUser":{"email":"karemyossry147@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AFdZucrsg_AJGf-kGHt-m98AY3m44s0NbaKlKpeqcHX8Yw"},"finalizeTime":"2022-07-17T16:33:12.147633Z","finalizeUser":{"email":"karemyossry147@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AFdZucrsg_AJGf-kGHt-m98AY3m44s0NbaKlKpeqcHX8Yw"}},"type":"DEPLOY","releaseTime":"2022-07-17T16:33:12.745272811Z","releaseUser":{"email":"karemyossry147@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AFdZucrsg_AJGf-kGHt-m98AY3m44s0NbaKlKpeqcHX8Yw"}}
+[debug] [2022-07-17T16:33:13.554Z] [hosting] release: {"name":"projects/388516405539/sites/perphawk-website/releases/1658075592745272","version":{"name":"projects/388516405539/sites/perphawk-website/versions/83fca523366f62a5","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-07-17T16:33:09.189325Z","createUser":{"email":"karemyossry147@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AFdZucrsg_AJGf-kGHt-m98AY3m44s0NbaKlKpeqcHX8Yw"},"finalizeTime":"2022-07-17T16:33:12.147633Z","finalizeUser":{"email":"karemyossry147@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AFdZucrsg_AJGf-kGHt-m98AY3m44s0NbaKlKpeqcHX8Yw"}},"type":"DEPLOY","releaseTime":"2022-07-17T16:33:12.745272811Z","releaseUser":{"email":"karemyossry147@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AFdZucrsg_AJGf-kGHt-m98AY3m44s0NbaKlKpeqcHX8Yw"}}
+[info] ✔  hosting[perphawk-website]: release complete 
+[info] 
+[info] ✔  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/perphawk-website/overview
+[info] Hosting URL: https://perphawk-website.web.app
