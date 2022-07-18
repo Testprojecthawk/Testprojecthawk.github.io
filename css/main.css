@@ -39,10 +39,6 @@ nav ul li a{
     border-radius: 3px;
     text-transform: uppercase;
 }
-a.active,a:hover{
-    background: #ffc800;
-    transition: .8;
-}
 
 header {
     
