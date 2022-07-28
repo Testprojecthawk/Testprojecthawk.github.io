@@ -315,7 +315,7 @@ section {
 footer{
     background-color: #000f;
     color: #ffff;
-    padding: 1em;
+    padding: 2em;
     display: flex;
     justify-content: space-between;
 }
