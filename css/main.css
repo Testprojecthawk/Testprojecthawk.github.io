@@ -237,12 +237,13 @@ section {
 
 .card {
     background-color: #ffff;
-    width: 21.25em;
+    width: 22.25em;
     box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
     border-radius: 10px;
     padding: 25px;
     margin: 15px;
     transition: 0.5s ease;
+    display: inline-block;
 }
 
 .card:hover {
@@ -254,6 +255,7 @@ section {
     font-size: 5em;
     text-align: center;
 }
+
 .title {
     display: flex;
     justify-content: center;
@@ -315,7 +317,7 @@ section {
 footer{
     background-color: #000f;
     color: #ffff;
-    padding: 2em;
+    padding: 1em;
     display: flex;
     justify-content: space-between;
 }
