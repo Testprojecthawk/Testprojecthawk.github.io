@@ -237,13 +237,13 @@ section {
 
 .card {
     background-color: #ffff;
-    width: 22.25em;
+    width: 23.25em;
     box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
     border-radius: 10px;
     padding: 25px;
     margin: 15px;
     transition: 0.5s ease;
-    display: inline-block;
+    display:inline-block
 }
 
 .card:hover {
@@ -252,9 +252,117 @@ section {
 
 .card .icon {
     color: #b5770a;
-    font-size: 5em;
+    font-size: 4em;
     text-align: center;
 }
+/* here is the blog css */
+.top-blogs {
+  position: relative;
+  width: 100%;
+  padding: 30px 0 0 0;
+}
+
+.top-blogs .tn-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.top-blogs .tn-img img {
+  width: 100%;
+}
+
+.top-blogs .tn-img:hover img {
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+
+.top-blogs .tn-title {
+  position: absolute;
+  top: 0; 
+  right: 0;
+  bottom: 0; 
+  left: 0;
+  padding: 15px 10px 15px 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, .0), rgba(0, 0, 0, .3), rgba(0, 0, 0, .9));
+  display: flex;
+  align-items: flex-end;
+}
+
+.top-blogs .tn-title a {
+  display: block;
+  width: 100%;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  transition: .3s;
+}
+
+.top-blogs .tn-left .tn-title a {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.top-blogs .tn-title a:hover {
+  color: #ffc400;
+}
+
+.top-blogs .tn-left {
+  margin-bottom: 30px;
+}
+
+.top-blogs .tn-right {
+  margin-bottom: 60px;
+  padding: 0 30px;
+}
+
+.top-blogs .tn-right .col-md-6 {
+  padding: 0;
+}
+
+.top-blogs .slick-prev,
+.top-blogs .slick-next {
+  width: 28px;
+  height: 28px;
+  z-index: 1;
+  transition: .5s;
+  color: #ffffff;
+  background: #000000;
+  border-radius: 4px;
+}
+
+.top-blogs .slick-prev {
+  left: 30px;
+}
+
+.top-blogs .slick-next {
+  right: 30px;
+}
+
+.top-blogs .slick-prev:hover,
+.top-blogs .slick-prev:focus,
+.top-blogs .slick-next:hover,
+.top-blogs .slick-next:focus {
+  color: #ffffff;
+  background: #ffc400;
+}
+
+.top-blogs .slick-prev::before,
+.top-blogs .slick-next::before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 18px;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.top-blogs .slick-prev::before {
+  content: "\f104";
+}
+
+.top-blogs .slick-next::before {
+  content: "\f105";
+}
+
+
 
 .title {
     display: flex;
