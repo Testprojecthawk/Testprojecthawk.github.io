@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,95 +7,276 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="shortcut icon" href="../img/logo-orange-bg.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <title>بيرب هاوك</title>  
-    <!-- CSS Libraries -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="lib/slick/slick.css" rel="stylesheet">
-    <link href="lib/slick/slick-theme.css" rel="stylesheet">
-
+    <title>بيرب هاوك</title>
 </head>
 <body>
-   
- <!-- <header>
-        <nav class=a"header-nav">
-            <a href="#">تكنولوجيا</a>
-            <a href="#">تقنية</a>
-            <a href="#">شروحات</a>
-            <a href="#">تعليم</a>
-            <a href="#">عنا</a>
-            <a href="#">مراجعات</a>
-            <a href="#">انظمة تشغيل</a>          
-        </nav>
-    </header> -->
-<section>
-    <div class="top-blogs">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 tn-left">
-                    <div class="row tn-slider">
-                        <div class="col-md-6">
-                            <div class="tn-img">
-                                <img src="/img/lenux.webp" />
-                                <div class="tn-title">
-                                    <a href="">ماهو نظام لينكس؟.</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="tn-img">
-                                <img src="/img/bro-Linux.webp" />
-                                <div class="tn-title">
-                                    <a  href="">هل لينكس يدعم الالعاب؟</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 tn-right">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="tn-img">
-                                <img src="/img/linux-works-on-all-distribution.webp" />
-                                <div class="tn-title">
-                                    <a href="">كيف يعمل نظام لينكس</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="tn-img">
-                                <img src="/img/logo-no-bg.png" />
-                                <div class="tn-title">
-                                    <a href="">مرحبا بكم الي بيرب هاوك استوديو!</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="tn-img">
-                                <img src="/img/bro-Linux.webp" />
-                                <div class="tn-title">
-                                    <a href="">هل لينكس يدعم الالعاب؟</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="tn-img">
-                                <img src="/img/lenux.webp" />
-                                <div class="tn-title">
-                                    <a href="">ما هو نظام لينكس</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <link rel="stylesheet" href="../css/blogpage.css">
+    <header>
+        <a class="logo" href="/"><img src="/img/logo-no-bg.png" alt="logo" width="70"></a> <h3 class="logoname">بيرب هاوك استوديو</h3>
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="/ar/تكنولوجيا.html">تكنولوجيا</a></li>
+                    <li><a href="/ar/تقنية.html">تقنية</a></li>
+                    <li><a href="/ar/تعليم.html">تعليم</a></li>
+                    <li><a href="/ar/مراجعات.html">مراجعات</a></li>
+                    <li><a href="/ar/انظمة تشغيل.html">انظمة تشغيل</a></li>
+                    <li><a href="/ar/دعم.html">دعم</a></li>
+                    <li><a href="/ar/توب10.html">توب 10</a></li>
+
+                </ul>
+            </nav>
+            <a class="cta" href="#">الرئيسي</a>
+            <p class="menu cta">القائمة</p>
+        </header>
+        <div class="overlay">
+            <a class="close">&times;</a>
+            <div class="overlay__content">
+                <a href="/ar/index.html#services">خدمات</a>
+                <a href="/ar/inedx.html#contact">تواصل</a>
+                <a href="#">حركات و تركات</a>
+                <a href="#">تصميم</a>
         </div>
+        </div>
+        <script type="text/javascript" src="mobilenav.js"></script>
+    </header>
+<section class="blogs">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+
+
+    <div class="webinar-grid">
+    
+      <a href="#" class="link-block">
+        <div class="jumbotron left-right-jumbotron-block">
+          <div class="webinar-image-container">
+            <img src="/img/lenux.webp">
+          </div>
+          <br>
+          <h1 class="dundas-blue-text-long">
+        </h1>
+
+         <div class="webinar-content-box">
+         <p><span>نظام لينكس هو نظام مفتوح المصدر. مفتوح المصدر هو ما يمكن تعديله من أي شخص بدون أن يطلب إذن من المطور أو ما يسمي بالإنجليزية</span><span> "OpenSource" </span><span>أو</span><span> "Free as Beer" </span><span>.</span></p>
+            <span class="dundas-blue-link">... اقرا المزيد &gt;</span>
+          </div>
+        </div>
+
+      <!--</a>
+      <a href="/learning/webinars/18-12-2016-visualizing-r-advanced-analytics-results-in-dundas-bi" class="link-block">
+      <div class="jumbotron left-right-jumbotron-block">
+          <div class="webinar-image-container">
+            <img src="http://www.dundas.com/Content/uploads/Visualizing_R_Webinar.png">
+          </div>
+          <h1 class="dundas-blue-text-long">
+          Visualizing R Advanced Analytics Results in Dundas BI
+        </h1>
+          <div class="webinar-content-box">
+            <p>We’ll show you how Dundas BI lets you use all of the existing data connections to inject data into R and then visualize and interact with the results in Dundas BI so more people get faster insights and make better decisions.</p>
+            <span class="dundas-blue-link">View webinar &gt;</span>
+          </div>
+        </div>
+      </a>
+      <a href="/learning/webinars/18-12-2016-visualizing-r-advanced-analytics-results-in-dundas-bi" class="link-block">
+        <div class="jumbotron left-right-jumbotron-block">
+          <div class="webinar-image-container">
+            <img src="http://www.dundas.com/Content/uploads/20_Tips.jpg">
+          </div>
+          <h1 class="dundas-blue-text-long">
+          Visualizing R Advanced Analytics Results in Dundas BI
+        </h1>
+          <div class="webinar-content-box">
+            <p>We’ll show you how Dundas BI lets you use all of the existing data connections to inject data into R and then visualize and interact with the results in Dundas BI so more people get faster insights and make better decisions.</p>
+            <span class="dundas-blue-link">View webinar &gt;</span>
+          </div>
+        </div>
+      </a>
+    
+      <a href="/learning/webinars/18-12-2016-visualizing-r-advanced-analytics-results-in-dundas-bi" class="link-block">
+        <div class="jumbotron left-right-jumbotron-block">
+          <div class="webinar-image-container">
+            <img src="http://www.dundas.com/Content/uploads/Winning-Dashboards-Webinar-600x233.png">
+          </div>
+          <h1 class="dundas-blue-text-long">
+          Visualizing R Advanced Analytics Results in Dundas BI
+        </h1>
+          <div class="webinar-content-box">
+            <p>We’ll show you how Dundas BI lets you use all of the existing data connections to inject data into R and then visualize and interact with the results in Dundas BI so more people get faster insights and make better decisions.</p>
+            <span class="dundas-blue-link">View webinar &gt;</span>
+          </div>
+        </div>
+      </a>
+    
+      <a href="/learning/webinars/18-12-2016-visualizing-r-advanced-analytics-results-in-dundas-bi" class="link-block">
+        <div class="jumbotron left-right-jumbotron-block">
+          <div class="webinar-image-container">
+            <img src="http://www.dundas.com/Content/uploads/Steps-to-Success-with-Self-Service-Analytics-Webinar-600x233.png">
+          </div>
+          <h1 class="dundas-blue-text-long">
+          Visualizing R Advanced Analytics Results in Dundas BI
+        </h1>
+          <div class="webinar-content-box">
+            <p>We’ll show you how Dundas BI lets you use all of the existing data connections to inject data into R and then visualize and interact with the results in Dundas BI so more people get faster insights and make better decisions.</p>
+            <span class="dundas-blue-link">View webinar &gt;</span>
+          </div>
+        </div>
+      </a>
+    
+      <a href="/learning/webinars/18-12-2016-visualizing-r-advanced-analytics-results-in-dundas-bi" class="link-block">
+        <div class="jumbotron left-right-jumbotron-block">
+          <div class="webinar-image-container">
+            <img src="http://www.dundas.com/Content/uploads/Big-Data-Webinar-600x233.png">
+          </div>
+          <h1 class="dundas-blue-text-long">
+          Visualizing R Advanced Analytics Results in Dundas BI
+        </h1>
+          <div class="webinar-content-box">
+            <p>We’ll show you how Dundas BI lets you use all of the existing data connections to inject data into R and then visualize and interact with the results in Dundas BI so more people get faster insights and make better decisions.</p>
+            <span class="dundas-blue-link">View webinar &gt;</span>
+          </div>
+        </div>
+      </a>
+    
+      <a href="/learning/webinars/18-12-2016-visualizing-r-advanced-analytics-results-in-dundas-bi" class="link-block">
+        <div class="jumbotron left-right-jumbotron-block">
+          <div class="webinar-image-container">
+            <img src="http://www.dundas.com/Content/uploads/v3-webinar-600x233.png">
+          </div>
+          <h1 class="dundas-blue-text-long">
+          Visualizing R Advanced Analytics Results in Dundas BI
+        </h1>
+          <div class="webinar-content-box">
+            <p>We’ll show you how Dundas BI lets you use all of the existing data connections to inject data into R and then visualize and interact with the results in Dundas BI so more people get faster insights and make better decisions.</p>
+            <span class="dundas-blue-link">View webinar &gt;</span>
+          </div>
+        </div>
+      </a>
+    
+      <a href="/learning/webinars/18-12-2016-visualizing-r-advanced-analytics-results-in-dundas-bi" class="link-block">
+        <div class="jumbotron left-right-jumbotron-block">
+          <div class="webinar-image-container">
+            <img src="http://www.dundas.com/Content/uploads/Visual-Analytics-Deliver-Key-Requirements-600X233.png">
+          </div>
+          <h1 class="dundas-blue-text-long">
+          Visualizing R Advanced Analytics Results in Dundas BI
+        </h1>
+          <div class="webinar-content-box">
+            <p>We’ll show you how Dundas BI lets you use all of the existing data connections to inject data into R and then visualize and interact with the results in Dundas BI so more people get faster insights and make better decisions.</p>
+            <span class="dundas-blue-link">View webinar &gt;</span>
+          </div>
+        </div>
+      </a>
+    
+      <a href="/learning/webinars/18-12-2016-visualizing-r-advanced-analytics-results-in-dundas-bi" class="link-block">
+        <div class="jumbotron left-right-jumbotron-block">
+          <div class="webinar-image-container">
+            <img src="http://www.dundas.com/Content/uploads/How-to-Build-a-Dashboard-600X233.png">
+          </div>
+          <h1 class="dundas-blue-text-long">
+          Visualizing R Advanced Analytics Results in Dundas BI
+        </h1>
+          <div class="webinar-content-box">
+            <p>We’ll show you how Dundas BI lets you use all of the existing data connections to inject data into R and then visualize and interact with the results in Dundas BI so more people get faster insights and make better decisions.</p>
+            <span class="dundas-blue-link">View webinar &gt;</span>
+          </div>
+        </div>
+      </a>
+    
+      <a href="/learning/webinars/18-12-2016-visualizing-r-advanced-analytics-results-in-dundas-bi" class="link-block">
+        <div class="jumbotron left-right-jumbotron-block">
+          <div class="webinar-image-container">
+            <img src="http://www.dundas.com/Content/uploads/Delivering-Secure-Self-Service-BI-600X233.png">
+          </div>
+          <h1 class="dundas-blue-text-long">
+          Visualizing R Advanced Analytics Results in Dundas BI
+        </h1>
+          <div class="webinar-content-box">
+            <p>We’ll show you how Dundas BI lets you use all of the existing data connections to inject data into R and then visualize and interact with the results in Dundas BI so more people get faster insights and make better decisions.</p>
+            <span class="dundas-blue-link">View webinar &gt;</span>
+          </div>
+        </div>
+      </a>
+    
+      <a href="/learning/webinars/18-12-2016-visualizing-r-advanced-analytics-results-in-dundas-bi" class="link-block">
+        <div class="jumbotron left-right-jumbotron-block">
+          <div class="webinar-image-container">
+            <img src="http://www.dundas.com/Content/uploads/Flexibility-Webinar-Banner-for-web.png">
+          </div>
+          <h1 class="dundas-blue-text-long">
+          Visualizing R Advanced Analytics Results in Dundas BI
+        </h1>
+          <div class="webinar-content-box">
+            <p>We’ll show you how Dundas BI lets you use all of the existing data connections to inject data into R and then visualize and interact with the results in Dundas BI so more people get faster insights and make better decisions.</p>
+            <span class="dundas-blue-link">View webinar &gt;</span>
+          </div>
+        </div>
+      </a>
+    
+      <a href="/learning/webinars/18-12-2016-visualizing-r-advanced-analytics-results-in-dundas-bi" class="link-block">
+        <div class="jumbotron left-right-jumbotron-block">
+          <div class="webinar-image-container archive">
+    
+          </div>
+          <h1 class="dundas-blue-text-long">
+          Visualizing R Advanced Analytics Results in Dundas BI
+        </h1>
+          <div class="webinar-content-box">
+            <p>We’ll show you how Dundas BI lets you use all of the existing data connections to inject data into R and then visualize and interact with the results in Dundas BI so more people get faster insights and make better decisions.</p>
+            <span class="dundas-blue-link">View webinar &gt;</span>
+          </div>
+        </div>
+      </a>
+    
+      <a href="/learning/webinars/18-12-2016-visualizing-r-advanced-analytics-results-in-dundas-bi" class="link-block">
+        <div class="jumbotron left-right-jumbotron-block">
+          <div class="webinar-image-container archive">
+    
+          </div>
+          <h1 class="dundas-blue-text-long">
+          Visualizing R Advanced Analytics Results in Dundas BI
+        </h1>
+          <div class="webinar-content-box">
+            <p>We’ll show you how Dundas BI lets you use all of the existing data connections to inject data into R and then visualize and interact with the results in Dundas BI so more people get faster insights and make better decisions.</p>
+            <span class="dundas-blue-link">View webinar &gt;</span>
+          </div>
+        </div>
+      </a>
+    
+      <a href="/learning/webinars/18-12-2016-visualizing-r-advanced-analytics-results-in-dundas-bi" class="link-block">
+        <div class="jumbotron left-right-jumbotron-block">
+          <div class="webinar-image-container archive">
+    
+          </div>
+          <h1 class="dundas-blue-text-long">
+          Visualizing R Advanced Analytics Results in Dundas BI
+        </h1>
+          <div class="webinar-content-box">
+            <p>We’ll show you how Dundas BI lets you use all of the existing data connections to inject data into R and then visualize and interact with the results in Dundas BI so more people get faster insights and make better decisions.</p>
+            <span class="dundas-blue-link">View webinar &gt;</span>
+          </div>
+        </div>
+      </a>
+    
+      <a href="/learning/webinars/18-12-2016-visualizing-r-advanced-analytics-results-in-dundas-bi" class="link-block">
+        <div class="jumbotron left-right-jumbotron-block">
+          <div class="webinar-image-container archive">
+    
+          </div>
+          <h1 class="dundas-blue-text-long">
+          Visualizing R Advanced Analytics Results in Dundas BI
+        </h1>
+          <div class="webinar-content-box">
+            <p>We’ll show you how Dundas BI lets you use all of the existing data connections to inject data into R and then visualize and interact with the results in Dundas BI so more people get faster insights and make better decisions.</p>
+            <span class="dundas-blue-link">View webinar &gt;</span>
+          </div>
+        </div>
+      </a>
+    
+    
     </div>
 </section>
     <footer class="footer-title">
         <p class="footer-title">جميع الحقوق محفوظة لدى  &copy <span><a href="../ar/">PerpHawkStudios</a></span></p>
         <p class="footer-title">لعام 2022م-1443هـ </p>
-    </footer>
+    </footer>-->
 
     </body>
 </html>
