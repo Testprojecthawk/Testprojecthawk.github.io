@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/main.scss">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
     <title>PerpHawkStudio</title>
 </head>
 <body>
@@ -29,5 +32,31 @@
       }
     });
     </script>
+    <header>
+      <h3>PerpHawkStudio</h3>
+      <a class="logo" href="/"><img src="/imgs/logo-no-bg.png" alt="logo" width="70"></a>
+      <nav>
+          <ul class="nav__links">
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">About</a></li>
+          </ul>
+      </nav>
+      <a class="cta" href="#">Contact</a>
+      <p class="menu cta">Menu</p>
+    </header>
+    <div id="mobile__menu" class="overlay">
+      <a class="close">&times;</a>
+      <div class="overlay__content">
+          <a href="#">Services</a>
+          <a href="#">Projects</a>
+          <a href="#">About</a>
+      </div>
+    </div>
+    <link type="text/javascript" src="mobile.js"></link>
+    
+    </body>
+    </header>
+    
 </body>
 </html>
