@@ -32,7 +32,7 @@
   .overlay__content a {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    color: #edf0f1;
+    color: #000000;
     text-decoration: none;
   }
   
@@ -59,7 +59,7 @@
   }
   
   .cta:hover {
-    background-color: rgba(255, 191, 0, 0.8);
+    background-color: rgb(255, 255, 255);
   }
   
   /* Mobile Nav */
