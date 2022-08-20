@@ -128,19 +128,19 @@ background-size: 35px 35px, 35px 35px, 17.5px 17.5px, 17.5px 17.5px;
   width: 749px;
   border: 1px;
   background-color: white;
-  left: 20px;
+  right: -440px;
   position: relative;
 }
 
 .soon {
   display: block;
-  justify-content: end;
+  justify-content:left;
   box-shadow: 0 6px 10px 0 rgb(0 0 0 / 10%);
   height: 27px;
   width: 349px;
   border:  7px;
   background-color: white;
-  left: 820px;
+  right: -35px;
   top: -4498px;
   position: relative;
   text-align: center;
@@ -181,7 +181,7 @@ background-size: 35px 35px, 35px 35px, 17.5px 17.5px, 17.5px 17.5px;
   position: relative;
   box-sizing: border-box;
   margin-top: -4500px;
-  margin-left: -38px;
+  margin-left: -58px;
 }
 
 
@@ -193,7 +193,7 @@ background-size: 35px 35px, 35px 35px, 17.5px 17.5px, 17.5px 17.5px;
   position: relative;
   display: block;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 10px 0px;
-  margin-left: -38px;
+  margin-left: -825px;
 }
 
 .other-blog {
@@ -206,7 +206,7 @@ background-size: 35px 35px, 35px 35px, 17.5px 17.5px, 17.5px 17.5px;
   box-sizing: border-box;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 10px 0px ;
   background-color: white;
-  left: 810px;
+  left: 20px;
   top: -4250px;
   
 }
@@ -314,7 +314,7 @@ top: -100px;
   box-shadow: rgba(255, 187, 0, 0.226) 0px 6px 10px 0px ;
   background-color: white;
   position: relative;
-  right: -19px;
+  right: -439px;
   top: -350px;
 
 }
@@ -326,7 +326,7 @@ top: -100px;
 }
 
 .btn-cssbuttons {
-  --btn-color: #275efe;
+  --btn-color: #ccbe00;
   position: relative;
   padding: 16px 32px;
   position: relative;
