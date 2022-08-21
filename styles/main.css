@@ -5,6 +5,20 @@ body {
   background-size: 40px 40px, 40px 40px, 20px 20px, 20px 20px;
 }
 
+::-webkit-scrollbar{
+  width:10px;
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 2px;
+  background-color: #ffd900;
+  box-shadow: inset 0 0 6px rgba(0,0,0,.5);
+}
+::-webkit-scrollbar-track{
+  border-radius: 1px;
+  background-color: #f7f2d5;
+  box-shadow: inset 0 0 6px rgba(0,0,0,.4);
+}
+
 .header {
   overflow: hidden;
   background-color: #000000;
@@ -99,7 +113,7 @@ body {
 
 
 .button {
-    background-color: #ffd0004d;
+    background-color: #ffd00067;
     color: rgb(0, 0, 0);
     width: 90px;
     padding: 10px 18px;
@@ -131,14 +145,19 @@ body {
   display: block;
   justify-content:left;
   box-shadow: 0 6px 10px 0 rgb(0 0 0 / 10%);
-  height: 27px;
-  width: 349px;
+  height: 28px;
+  width: 351px;
   border:  7px;
   background-color: white;
-  right: -35px;
-  top: -4498px;
+  right: -30px;
+  top: -4280px;
   position: relative;
   text-align: center;
+}
+
+.soontxt {
+  top: 3px;
+  position:relative;
 }
 
 .ico {
@@ -165,19 +184,6 @@ body {
   display: inline;
 }
 
-.fram-box {
-  height: 920.281px;
-  width: 390px;
-  text-decoration: none solid rgb(51, 51, 51); 
-  padding: 15px 0.15px;
-  min-height: 1px;
-  display: block;
-  float: right;
-  position: relative;
-  box-sizing: border-box;
-  top: -4500px;
-  left: 17px;
-}
 
 
 
@@ -188,7 +194,8 @@ body {
   position: relative;
   display: block;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 10px 0px;
-  margin-left: -825px;
+  margin-left: 30px;
+  top: -4260px;
 }
 
 .other-blog {
