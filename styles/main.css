@@ -1,15 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 body {
   font-family: NotoKufiArabic-Bold, "Open Sans", tahoma, Arial, sans-serif;
-  background-color: #ebebeb;
+  background: radial-gradient(circle, transparent 20%, #e1e1e1 20%, #e1e1e1 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e1e1e1 20%, #e1e1e1 80%, transparent 80%, transparent) 20px 20px, linear-gradient(#ffffff 1.6px, transparent 1.6px) 0 -0.8px, linear-gradient(90deg, #ffffff 1.6px, #e1e1e1 1.6px) -0.8px 0;
+  background-size: 40px 40px, 40px 40px, 20px 20px, 20px 20px;
 }
 
-.body {
-  background-color: #cacaca;
-opacity: 0.3;
-background: radial-gradient(circle, transparent 20%, #cacaca 20%, #cacaca 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #cacaca 20%, #cacaca 80%, transparent 80%, transparent) 17.5px 17.5px, linear-gradient(#444444 1.4000000000000001px, transparent 1.4000000000000001px) 0 -0.7000000000000001px, linear-gradient(90deg, #444444 1.4000000000000001px, #cacaca 1.4000000000000001px) -0.7000000000000001px 0;
-background-size: 35px 35px, 35px 35px, 17.5px 17.5px, 17.5px 17.5px;
-}
 .header {
   overflow: hidden;
   background-color: #000000;
@@ -180,8 +175,8 @@ background-size: 35px 35px, 35px 35px, 17.5px 17.5px, 17.5px 17.5px;
   float: right;
   position: relative;
   box-sizing: border-box;
-  margin-top: -4500px;
-  margin-left: -58px;
+  top: -4500px;
+  left: 17px;
 }
 
 
@@ -212,6 +207,7 @@ background-size: 35px 35px, 35px 35px, 17.5px 17.5px, 17.5px 17.5px;
 }
 
 .contentb {
+  overflow: hidden;
   font-size: 16px;
   font-weight: 700;
   line-height: 17.6px;
@@ -221,6 +217,13 @@ background-size: 35px 35px, 35px 35px, 17.5px 17.5px, 17.5px 17.5px;
   border-radius: 2px;
   position: relative;
   right: 34px;
+  margin-top: -11px;
+}
+
+.b-tit {
+  left: 148px;
+  top: -20px;
+position: relative;
 }
 
 .h3 {
@@ -247,7 +250,7 @@ display: list-item;
 list-style-type: none;
 list-style-position: outside;
 box-sizing: border-box;
-top: -120px;
+top: -130px;
 left: 9px;
 position: relative;
 }
@@ -288,9 +291,9 @@ top: -100px;
 .infotit {
   position: relative;
   text-align: right;
-  top: -339px;
+  top: -348px;
   cursor: pointer;
-  left: -29px;
+  left: -39px;
   color: #dab200;
 }
 
@@ -312,7 +315,7 @@ top: -100px;
   position: relative;
   box-sizing: border-box;
   box-shadow: rgba(255, 187, 0, 0.226) 0px 6px 10px 0px ;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   position: relative;
   right: -439px;
   top: -350px;
@@ -324,6 +327,56 @@ top: -100px;
   position: relative;
   right: 13px;
 }
+
+.Teambox {
+  position: relative;
+  align-items: center;
+}
+
+.Team-card{
+  background-color: rgb(255, 255, 255);
+  border: 3px solid rgb(255, 208, 0);
+  min-height: 14em;
+  width: 23em;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px;
+  transition: 0.5s ease;
+  position: relative;
+  left: 400px;
+
+}
+
+
+.Team-card:hover{
+  transform: scale(1.1);
+}
+
+.Team-card:hover .project-img{
+  opacity: 0.7;
+}
+
+.Team-img img{
+  width: 100%;
+}
+
+.Team-info{
+  padding: 1em;
+}
+
+.Team-category{
+  font-size: 0.8em;
+  color: #000f;
+}
+
+.Team-title{
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
 
 .btn-cssbuttons {
   --btn-color: #ccbe00;
