@@ -34,6 +34,13 @@
          <nav class="navbar">
            <img src="/imgs/NewLogo-Clear.png" alt="Company Logo">
            <div class="menu-toggle" id="mobile-menu">
+            <script>
+                $('.menu-toggle').click(function(){
+                 $(".nav").toggleClass("mobile-nav");
+                  $(this).toggleClass("is-active");
+                  });
+
+            </script>
              <span class="bar"></span>
              <span class="bar"></span>
              <span class="bar"></span>
@@ -92,9 +99,9 @@
       <h2 class="AboutUs">About Us</h2>
       <h4>Welcome to our Website.</h4>
       <h4>PerpHawk is a Technology and Development studio, we gives for everyone Special content</h4>
-      <h4>Technology News,Devices Tips&Tricks With proplem Solving</h4>
+      <h4>Technology News,Devices Tips&Tricks With problem Solving</h4>
       <h4>Development Coding & Animations</h4>
-      <h4>Learning Contact</h4>
+      <h4>Learning Content</h4>
     </div>
     <section class="cards" id="Work">
       <h2 class="title">Work</h2>
