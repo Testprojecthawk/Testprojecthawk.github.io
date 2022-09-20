@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PerpHawk is an studio for technology and development content" />
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <link rel = "icon" href = 
+"/imgs/NewLogo-Clear.png" 
+        type = "image/x-icon">
+        <meta property="og:title" content="ComingSoon a Big Studio For Tech&Dev and more" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://perphawkstudio.github.io/C/ar/linux1b.html" />
+<meta property="og:image" content="/imgs/NewLogo-Clear.png">
+<meta name="theme-color" content="#dab200">
+<meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/main.scss">
+    <link href="/js/mobile_menu.js">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    <title>PrepHawk|soon</title>
+</head>
+<body>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+    <div class="page-wrapper">
+        <div class="nav-wrapper">
+         <div class="grad-bar"></div>
+         <nav class="navbar">
+           <img src="/imgs/NewLogo-clear.png" alt="Company Logo">
+           <div class="menu-toggle" id="mobile-menu">
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+           </div>
+           <ul class="navbar">
+             <li class="nav-item"><a href="#About">About</a></li>
+             <li class="nav-item"><a href="#Work">Work</a></li>
+             <li class="nav-item"><a href="#Team">Team</a></li>
+             <li class="nav-item"><a href="#Contact">Contact Us</a></li>
+             
+           </ul>
+         </nav>
+         </div>
+         <section class="headline">
+           <h1><span>ComingSoon</span></h1>
+           <p id="Time2"></p>
+           <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Jan 5, 2025 15:37:25").getTime();
+            
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+            
+              // Get today's date and time
+              var now = new Date().getTime();
+            
+              // Find the distance between now and the count down date
+              var distance = countDownDate - now;
+            
+              // Time calculations for days, hours, minutes and seconds
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+              // Display the result in the element with id="demo"
+              document.getElementById("Time2").innerHTML = days + "d " + hours + "h "
+              + minutes + "m " + seconds + "s ";
+            
+              // If the count down is finished, write some text
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+              }
+            }, 1000);
+            </script>
+           <div class="social-icons">
+            <a href="https://github.com/perphawk/perphawk.github.io"><i class="fab fa-github"></i></a>
+            <a href="https://youtube.com/channel/UCzs3NVq1cPreNb4p-ehIiMQ"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100082784070056"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/HawkStudioo?t=cDvXgj40vXot0hCiF6PWfw&s=09"><i class="fab fa-twitter"></i></a>
+           </div>
+          </section>
+    </div>
+    <div class="about-box">
+      <h2 class="AboutUs">About Us</h2>
+      <h4>Welcome to our Website.</h4>
+      <h4>PerpHawk is a Technology and Development studio, we gives for everyone Special content</h4>
+      <h4>Technology News,Devices Tips&Tricks With proplem Solving</h4>
+      <h4>Development Coding & Animations</h4>
+      <h4>Learning Contact</h4>
+      <h4>_____________________________________________________________</h4>
+    </div>
+    <section class="cards" id="Work">
+      <h2 class="title">Work</h2>
+      <div class="content">
+          <div class="card">
+              <div class="icon">
+                  <i class="fas fa-laptop-code"></i>
+              </div>
+              <div class="info">
+                  <h3>Web Development</h3>
+                  <p>we are creating a Special Wesites</p>
+              </div>
+          </div>
+          <div class="card">
+              <div class="icon">
+                  <i class="fas fa-atom"></i>
+              </div>
+              <div class="info">
+                  <h3>App Development</h3>
+                  <p>creating an electron Application</p>
+
+              </div>
+          </div>
+          <div class="card">
+            <div class="icon">
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="info">
+                <h3>Learn</h3>
+                <p>Learning content</p>
+            </div>
+        </div>
+        <div class="card">
+          <div class="icon">
+              <i class="fas fa-music"></i>
+          </div>
+          <div class="info">
+              <h3>Music</h3>
+              <p>creating a Music Content</p>
+          </div>
+      </div>
+      </div>
+      <section class="cards" id="Team">
+        <h2 class="title">Team</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="info">
+                    <h3>Karim</h3>
+                    <p>The Founder And CEO OF PerpHawkStudio,Developer</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="info">
+                    <h3>Youssef</h3>
+                    <p>Founder And Developer</p>
+  
+                </div>
+            </div>
+            <div class="card">
+              <div class="icon">
+                  <i class="fas fa-user"></i>
+              </div>
+              <div class="info">
+                  <h3>Moayed</h3>
+                  <p>Founder and Desgin Developer</p>
+              </div>
+          </div>
+          <section class="cards" id="Contact">
+            <h2 class="title">Contact Us</h2>
+            <div class="content">
+                <div class="card">
+                    <div class="icon">
+                      <ion-icon name="mail-outline"></ion-icon>
+                    </div>
+                    <div class="info">
+                        <h3>Email</h3>
+                        <p>hawk_studio@yahoo.com</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                      <ion-icon name="power-outline"></ion-icon>
+                    </div>
+                    <div class="info">
+                        <h3>OpenSoon After</h3>
+                        <p id="Time">Time</p>
+                    </div>
+                  </div>
+                        <script>
+                          // Set the date we're counting down to
+                          var countDownDate = new Date("Jan 5, 2025 15:37:25").getTime();
+                          
+                          // Update the count down every 1 second
+                          var x = setInterval(function() {
+                          
+                            // Get today's date and time
+                            var now = new Date().getTime();
+                          
+                            // Find the distance between now and the count down date
+                            var distance = countDownDate - now;
+                          
+                            // Time calculations for days, hours, minutes and seconds
+                            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                          
+                            // Display the result in the element with id="demo"
+                            document.getElementById("Time").innerHTML = days + "d " + hours + "h "
+                            + minutes + "m " + seconds + "s ";
+                          
+                            // If the count down is finished, write some text
+                            if (distance < 0) {
+                              clearInterval(x);
+                              document.getElementById("demo").innerHTML = "EXPIRED";
+                            }
+                          }, 1000);
+                          </script>
+                    </div>
+                </div>
+                <div class="Music">
+                  <audio src="/imgs/HOME_Resonance.mp3" id="music" autoplay loop>
+                    <script>
+                      document.getElementById("music").volume = 0.2;
+                    </script>
+                  </audio>
+                </div>
+  </section>
+<footer class="footer" id="footer">
+    <p class="footer-title">Copyright &copy; <span>PerpHawkStudio</span></p>
+        <div class="social-icons">
+            <a href="https://github.com/perphawk/perphawk.github.io"><i class="fab fa-github"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100082784070056"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/HawkStudioo?t=cDvXgj40vXot0hCiF6PWfw&s=09"><i class="fab fa-twitter"></i></a>
+            <a href="https://youtube.com/channel/UCzs3NVq1cPreNb4p-ehIiMQ"><i class="fab fa-youtube"></i></a>
+        </div>
+</footer>
+</body>
+</html>
