@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PerpHawk is an studio for technology and development content" />
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <link rel = "icon" href = 
+"/imgs/NewLogo-Clear.png" 
+        type = "image/x-icon">
+        <meta property="og:title" content="PerpHawkStudio For Technology And Development |Soon..." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="" />
+<meta property="og:image" content="/imgs/SoonEN.png">
+<meta name="theme-color" content="#dab200">
+<meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link href="/js/mobile_menu.js">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    <title>PrepHawk|soon</title>
+</head>
+ <body>
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+     <div class="page-wrapper">
+        <div class="nav-wrapper">
+         <div class="grad-bar"></div>
+         <nav class="navbar">
+           <img src="/imgs/NewLogo-Clear.png" alt="Company Logo">
+           <div class="menu-toggle" id="mobile-menu">
+            <script>
+                $('.menu-toggle').click(function(){
+                 $(".nav").toggleClass("mobile-nav");
+                  $(this).toggleClass("is-active");
+                  });
+
+            </script>
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+           </div>
+           <ul class="navbar">
+             <li class="nav-item"><a href="#About">About</a></li>
+             <li class="nav-item"><a href="#Work">Work</a></li>
+             <li class="nav-item"><a href="#Team">Team</a></li>
+             <li class="nav-item"><a href="#Contact">Contact Us</a></li>
+             
+           </ul>
+         </nav>
+         </div>
+    </div>
+    <!-- Start From here Write The Page Content -->
+
+    <section class="PageContent-A"></section>
+
+    <!-- The Footer -->
+
+    </section>
+    <footer class="footer" id="footer">
+         <p class="footer-title">Copyright &copy; <span>PerpHawkStudio</span></p>
+            <div class="social-icons">
+             <a href="https://github.com/perphawk/perphawk.github.io"><i class="fab fa-github"></i></a>
+             <a href="https://www.facebook.com/profile.php?id=100082784070056"><i class="fab fa-facebook"></i></a>
+             <a href="https://twitter.com/HawkStudioo?t=cDvXgj40vXot0hCiF6PWfw&s=09"><i class="fab fa-twitter"></i></a>
+             <a href="https://youtube.com/channel/UCzs3NVq1cPreNb4p-ehIiMQ"><i class="fab fa-youtube"></i></a>
+            </div>
+     </footer>
+ </body>
+</html>
