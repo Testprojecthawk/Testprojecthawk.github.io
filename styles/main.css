@@ -309,7 +309,7 @@ input {
 
 @media only screen and (max-width: 720px) {
   
-}
+
   .features {
     flex-direction: column;
     padding: 50px;
@@ -370,3 +370,4 @@ input {
   .headline {
     height: 20vh;
   }
+}
