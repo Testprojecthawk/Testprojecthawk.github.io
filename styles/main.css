@@ -33,6 +33,7 @@ h1, p {
   text-align: center;
   line-height: 1.4;
   font-size: 2.2rem;
+  transitIon:0.75s;
 }
 
 .social-icons a {
@@ -128,6 +129,19 @@ h1, p {
   border: 2px solid #e24a1b;
   border-radius: 4px;
   display: inline;
+  transitIon: 0.75s;
+}
+
+@keyframes transitoIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
 }
 .about-box {
   background-color: #ffc400;
@@ -135,6 +149,7 @@ h1, p {
   padding: 37px;
   border: 2px solid rgb(56, 56, 56);
   margin: 25px;
+  transitIon:0.75s;
 }
 
 .title{
@@ -147,7 +162,6 @@ h1, p {
   background-color: #ffc400;
   border-radius: 2px;
   width:auto
-
 }
 
 .card{
@@ -158,6 +172,7 @@ h1, p {
   padding: 8px;
   margin: 15px;
   transition: 0.4s ease;
+  transitIon:0.75s;
 }
 .content{
   display: flex;
