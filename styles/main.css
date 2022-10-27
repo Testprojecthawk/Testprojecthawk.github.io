@@ -120,6 +120,25 @@ h1, p {
   justify-content: center;
   align-items: center;
 }
+.Swiperbox{
+  background-color: #c7c7c7;
+  padding: 290px;
+  border: 1px solid rgb(56, 56, 56);
+  margin-left: 120px;
+  border-radius: 3px;
+  text-align: center;
+  margin-top: 18px;
+
+}
+.AdView {
+  background-color: #c7c7c7;
+  width: 119px;
+  height: 500px;
+  top: -615px;
+  position: relative;
+  border-radius: 2px;
+  text-align: center;
+}
 .AboutUs {
   background-color: #e24a1b;
   width: 111px;
@@ -209,6 +228,7 @@ h1, p {
 .content a{
   text-decoration: none;
 }
+
 
 footer{
   background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1435224668334-0f82ec57b605?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80');
@@ -385,4 +405,5 @@ input {
   .headline {
     height: 20vh;
   }
+  
 }
