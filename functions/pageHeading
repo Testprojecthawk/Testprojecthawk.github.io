@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+ <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="PerpHawk is an studio for technology and development content" />
-    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-    <link rel = "icon" href = 
-"/imgs/NewLogo-Clear.png" 
-        type = "image/x-icon">
-        <meta property="og:title" content="PerpHawkStudio For Technology And Development |Soon..." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="" />
-<meta property="og:image" content="/imgs/SoonEN.png">
-<meta name="theme-color" content="#dab200">
-<meta name="twitter:card" content="summary_large_image">
+    <meta name="description" content="PAGE DESCRIPTION" />
+    <meta name="keywords" content="PAGE,KAY,WORDS,FOR,GOOGLE,SEARCH,!!">
+    <link rel = "icon" href = "/imgs/NewLogo-Clear.png" type = "image/x-icon">
+        <meta property="og:title" content="PAGE LINK CONTENT/DESCRIPTION!! />
+   <meta property="og:type" content="website" />
+ <meta property="og:url" content="ANUTHER PAGE DESCRIPTION!!" />
+ <meta property="og:image" content="/imgs/NewLogo-Clear>
+   <meta name="theme-color" content="#dab200"> 
+ <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="/styles/main.css">
     <link href="/js/mobile_menu.js">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
-    <title>PrepHawk|soon</title>
-</head>
- <body>
+    <title>PrepHawk|PAGENAME</title>
+ </head>
+  <body>
    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
